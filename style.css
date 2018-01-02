@@ -14,21 +14,18 @@
 .images{
     position: relative;
 }
-.images > img{ 
-    width: 100%;/*宽度跟父元素一样*/
-    transition: all 0.3s;
+.images > img{
     position: absolute;
-    top: 0;
+    transition:  all 0.3s;
 }
-.images > img.current{/*正常状态*/
-    left: 0;
-    transition: translataX(0);
+.images > img.current{  
+    transform: translateX(0);
     z-index: 1;
 }
-.images > img.leave{/*往左走*/
+.images > img.leave{
     transform: translateX(-100%);
     z-index: 1;
 }
-.images > img.enter{/*往右走*/
+.images > img.enter{
     transform: translateX(100%);
 }
