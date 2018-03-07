@@ -16,7 +16,7 @@ $(previous).on('click', function(){
 let timer = setInterval(function(){
   goToSlide(current+1)
 },2000)
-$('.container').on('mouseenter', function(){
+$('#window, #controls > button, buttons > button').on('mouseenter', function(){
   window.clearInterval(timer)
 }).on('mouseleave', function(){
   timer = setInterval(function(){
