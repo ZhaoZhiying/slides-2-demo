@@ -19,3 +19,6 @@
 .controls, .buttons{
     text-align: center;
 }
+.active{
+    color: blue;
+}
