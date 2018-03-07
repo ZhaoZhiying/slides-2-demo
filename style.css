@@ -1,8 +1,6 @@
 *{
     margin: 0;
     padding: 0;
-}
-*{
     box-sizing: border-box;
 }
 .window{
@@ -12,20 +10,12 @@
     overflow: hidden;
 }
 .images{
-    position: relative;
+    display: flex;
+    transition: all 1s;
 }
 .images > img{
-    position: absolute;
-    transition:  all 0.3s;
+    width: 100%;
 }
-.images > img.current{  
-    transform: translateX(0);
-    z-index: 1;
-}
-.images > img.leave{
-    transform: translateX(-100%);
-    z-index: 1;
-}
-.images > img.enter{
-    transform: translateX(100%);
+.controls, .buttons{
+    text-align: center;
 }

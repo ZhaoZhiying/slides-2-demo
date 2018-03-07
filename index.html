@@ -8,13 +8,25 @@
     <link rel="stylesheet" href="./style.css">  
 </head>
 <body>
-    <div class="window">
-        <div class="images" id="images">
-            <img src="./img/1.jpg" alt="图片1" >
-            <img src="./img/2.jpg" alt="图片2" >
-            <img src="./img/3.jpg" alt="图片3" >
+
+    <div class="container">
+        <div class="window">
+            <div id="images" class="images">
+                    <img src="./img/1.jpg" alt="图片">
+                    <img src="./img/2.jpg" alt="图片">
+                    <img src="./img/3.jpg" alt="图片">
+            </div>
         </div>
-    </div>  
+        <div id="controls" class="controls" style="text-align:center;">
+          <button id="previous">上一张</button>
+          <button id="next">下一张</button>
+        </div>
+        <div id="buttons" class="buttons">
+          <button>1</button>
+          <button>2</button>
+          <button>3</button>
+        </div>
+      </div>
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="./main.js"></script>
